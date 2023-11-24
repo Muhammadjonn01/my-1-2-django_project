@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        button
+        {
+           text-transform: uppercase;  
+        }
+    </style>
+    <div style="display: flex;box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);position: fixed;width: 100%;height: 100px;background-color: white;z-index: 10;">
+        <img src="{% static 'img/120042641.jpg' %}" style="width: 80px; height: 80px; border-radius: 50%;margin-left: 50px;margin-top: 10px ;" alt="No foto">
+        <ul style="display: flex;font-size: 20px;font-weight: 900;list-style: none;text-transform: uppercase;gap: 40px;justify-content: center;align-items: center;margin-left: 60%;">
+            <li>
+                <a  href="{% url 'home' %}">home</a>
+            </li>
+            <li>
+                <a  href="{% url 'partfolio' %}">partfolio</a>
+            </li>
+            <li>
+                <a  href="{% url 'about' %}">about</a>
+            </li>
+        </ul>
+    </div>
+    <div style="width: 100%; height: 550px;border: 1px solid black;position: absolute;margin-top: 100px; background-repeat: no-repeat;background-size: cover; ;background-image: url({% static 'img/istockphoto-1337232523-1024x1024.jpg' %});">
+        <p style="font-size: 40px;color: white;text-align: center;margin-top: 200px;font-weight: 900;">PORTFOLIO INFO ABOUT SOMEONE</p>
+    </div>
+    <div style="position: absolute;margin-top: 700px;">
+        <p style="font-size: 40px;color: black;text-align: center;font-weight: 900;">PORTFOLIO</p>
+        <p style="margin-left:50px;font-size: 20px;color: black;text-align: center;">A portfolio is a collection of work samples that showcases the skills, talents, and experiences of an individual. It is commonly used in various fields such as art, design, writing, photography, and marketing to demonstrate the quality and range of someone's work.</p>
+    </div>
+    <div style="background-color: white;margin-top: 950px;width:1200px;position: absolute;margin-left: 140px;">
+        <div style="display: flex;flex-wrap: wrap;column-gap: 130px;row-gap: 50px;">
+            <div style="width: 300px;height: 200px;border-radius: 50px;border:5px inset black;">
+                <p style="text-align: center;width: 250px;margin-left: 25px;margin-top: 30px;color: rgba(0, 94, 255, 0.872);">Resume or CV: A summary of the individual's education, work history, skills, and achievements.</p>
+            </div>
+        <div style="width: 300px;height: 200px;border-radius: 50px;border:5px inset black;">  
+                <p style="text-align: center;width: 250px;margin-left: 25px;margin-top: 30px;color: rgba(0, 94, 255, 0.872);"> Samples of Work: Examples of the individual's best projects, such as artwork, design mock-ups, writing samples, or marketing campaigns.</p>
+            </div>   
+                <div style="width: 300px;height: 200px;border-radius: 50px;border:5px inset black;">       
+                <p style="text-align: center;width: 250px;margin-left: 25px;margin-top: 30px;color: rgba(0, 94, 255, 0.872);">Project Descriptions: Descriptions or explanations of the context, objectives, and challenges of each project.</p>
+            </div>           
+        <div style="width: 300px;height: 200px;border-radius: 50px;border:5px inset black;">                        
+                <p style="text-align: center;width: 250px;margin-left: 25px;margin-top: 30px;color: rgba(0, 94, 255, 0.872);">Testimonials or Recommendations: Feedback or endorsements from clients, colleagues, or supervisors.</p>
+            </div>  
+        <div style="width: 300px;height: 200px;border-radius: 50px;border:5px inset black;"> 
+                 <p style="text-align: center;width: 250px;margin-left: 25px;margin-top: 30px;color: rgba(0, 94, 255, 0.872);"> Skills or Expertise: An overview of the person's technical skills, software proficiency, or areas of expertise.</p>
+            </div>
+        <div style="width: 300px;height: 200px;border-radius: 50px;border:5px inset black;">
+            <p style="text-align: center;width: 250px;margin-left: 25px;margin-top: 30px;color: rgba(0, 94, 255, 0.872);"> Personal Statement: A brief introduction or statement about the individual's goals, aspirations, or creative process.</p>
+            </div>
+        </div>
+    </div>
+<div style="position: absolute;top: 1500px;width: 100%;height: 150px;background-color: bisque;">
+        <p style="text-align: center;color: rgba(0, 94, 255, 0.872);margin-top: 30px;">CREATED BY MUHAMMADJON.</p>
+        <p style="text-align: center; color: rgba(0, 94, 255, 0.872);text-align: center;">for more info:
+        <a href="https://t.me/individualy_01" style="text-align: center; display: inline-block; margin-top: 20px;">individualy_01</a>
+    </p> 
+</div>
+</body>
+</html>
